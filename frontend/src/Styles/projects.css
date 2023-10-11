@@ -1,0 +1,104 @@
+/* Add your other stylesheets here */
+
+.Form_parent form {
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(13, 69, 255, 0.35) 0px 5px 15px;
+    background-color: white;
+    margin-top: 2%;
+  }
+  
+  .mobile .Form_parent form {
+    width: 90%;
+  }
+  
+  .Form_parent form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .Form_parent form label select,
+  .Form_parent form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .Form_parent form input[type="date"] {
+    width: 100%;
+  }
+  
+  .input_parent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .input_parent>div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .project-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .project-theme>div:first-child {
+    width: 70%;
+  }
+  
+  .save-button>button,
+  .mobile .save-button.mobile>button {
+    padding: 15px 40px;
+    background-color: rgb(4, 78, 146);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .Form_parent .ProjectTheme {
+    padding-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .Form_parent form {
+      width: 90%;
+      margin-top: 0;
+    }
+  
+    .mobile .project-theme>div:first-child {
+      width: 100%;
+    }
+  
+    .mobile .input_parent>div>div {
+      width: 100%;
+    }
+  
+    .mobile .Form_parent form {
+      position: relative;
+    }
+  
+    .mobile .Form_parent .ProjectTheme {
+      padding: 10px;
+      padding-bottom: 1.5625rem;
+    }
+  
+    .mobile .save-button.mobile>button {
+      margin-top: 15px;
+    }
+  }
+  
